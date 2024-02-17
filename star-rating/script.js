@@ -13,7 +13,8 @@ stars.forEach((elm) => {
     })
 
     elm.addEventListener('mouseout', (e) => {
-        colortheStars(0);
+        stars.forEach(star => star.classList.remove('highlight'));
+        rating.textContent = "You Rated: 0";
     })
 
 })
@@ -25,5 +26,6 @@ function colortheStars(value){
         if(idx < value){
             star.classList.add('highlight');
         }
+        
     })
 }
