@@ -6,10 +6,10 @@ let todos = [];
 const todoContainer = document.querySelector('.show-todo');
 submitBtn.addEventListener('click', (e) => {
     e.preventDefault();
-    const addedTodo = input.value.trim(); // Trim whitespace from the input value
-    if (addedTodo !== '') { // Check if the input value is not empty
+    const addedTodo = input.value.trim(); 
+    if (addedTodo !== '') { 
         todos.push(addedTodo);
-        renderTodos(); // Re-render the todo list
+        renderTodos(); 
         input.value = "";
     }
 });
@@ -27,11 +27,10 @@ function renderTodos() {
         output.appendChild(removeBtn);
         todoContainer.appendChild(output);
         removeBtn.setAttribute('data-index', idx);
-
         removeBtn.addEventListener('click', (e) => {
             const indexToRemove = parseInt(e.target.getAttribute('data-index'));
-            todos.splice(indexToRemove, 1); // Corrected from slice to splice
-            renderTodos(); // Re-render the todo list
+            todos.splice(indexToRemove, 1); 
+            renderTodos(); 
         });
     });
 }
