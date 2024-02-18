@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.todo-container{
+    position: absolute;
+    left: 45%;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+h2{
+    font-size: 3rem;
+    color: blueviolet;
+}
+
+.form{
+    margin-top: 20px;
+}
+
+.todo-input{
+    padding: 1rem 2rem;
+}
+
+.submit-btn{
+    cursor: pointer;
+    padding: 1rem .5rem;
+}
+
+.show-todo{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    flex-direction: column;
+}
+.remove-todo-btn{
+    display: none;
+}
+
+.output{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+
+
